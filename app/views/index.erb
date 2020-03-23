@@ -6,9 +6,9 @@
   </head>
   <body>
     <% @recipes.each do |recipe| %>
-    <a href="/recipes/<%= @recipe.id %>"><h2><%= @recipe.name %></h2></a>
-    <h3>Ingredients:</h3> <%= @recipe.ingredients %>
-    <h3>Cook Time:</h3> <%= @recipe.cook_time %>
+    <a href="/recipes/<%= recipe.id %>"><h2><%= recipe.name %></h2></a>
+    <h3>Ingredients:</h3> <%= recipe.ingredients %>
+    <h3>Cook Time:</h3> <%= recipe.cook_time %>
     <% end %>
   </body>
 </html>

@@ -7,10 +7,10 @@
   <body>
     <% @recipes.each do |recipe| %>
     <a href="/recipes/<%= @recipes.id %>">
-    <h2><%= @recipes.name %></h2>
+    <h2><%= @recipe.name %></h2>
     </a>
-    <h3>Ingredients:</h3> <%= @recipes.ingredients %>
-    <h3>Cook Time:</h3> <%= @recipes.cook_time %>
+    <h3>Ingredients:</h3> <%= @recipe.ingredients %>
+    <h3>Cook Time:</h3> <%= @recipe.cook_time %>
     <% end %>
   </body>
 </html>

@@ -19,7 +19,7 @@ class ApplicationController < Sinatra::Base
   
   post '/recipes' do
     @recipes = Recipe.create(params)
-    
+    params
   end
   
   get '/recipes/:id' do
